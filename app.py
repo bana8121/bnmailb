@@ -4,7 +4,7 @@ from zenora import APIClient
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 app.config["SECRET_KEY"] = "verysecret"
 client = APIClient(TOKEN, client_secret=CLIENT_SECRET)
 
